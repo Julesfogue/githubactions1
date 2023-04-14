@@ -6,3 +6,4 @@ pwd
 cat /etc/*release
 whoami
 #EOF
+#
