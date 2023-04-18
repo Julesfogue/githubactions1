@@ -16,6 +16,11 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create a Changelog_info file
+        run: |
+          git config --get remote.origin.url
+          git log --pretty=oneline > changelog_info
           
           
       
