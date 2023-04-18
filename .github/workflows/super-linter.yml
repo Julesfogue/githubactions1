@@ -21,7 +21,9 @@ jobs:
         run: |
           git config --get remote.origin.url
           git clone https://github.com/Julesfogue/githubactions1.git
+          git log --oneline
           git log
+          git log --stat
           git log --pretty=oneline > changelog_info
           pwd
           cat changelog_info
